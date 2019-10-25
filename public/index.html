@@ -4,7 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+
+    <title>Codejam-canvas</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 class="header__heading">CodeJam - Pallete</h1>
+
+      <button class="header__menu-toggle">
+        <span class="visually-hidden">Toggle menu</span>
+      </button>
+
+      <button class="header__options-toggle">
+        <span class="visually-hidden">Toggle options</span>
+      </button>
+    </header>
+
+    <main class="app">
+      <ul class="panel app__panel">
+        <li class="panel__group">
+          <ul class="panel__list">
+            <li class="panel__item">
+              <button class="tool tool--paint-bucket panel__tool">Paint bucket</button>
+            </li>
+
+            <li class="panel__item">
+              <button class="tool tool--choose-color panel__tool">Choose color</button>
+            </li>
+          </ul>
+        </li>
+
+        <li class="panel__group">
+          <ul class="panel__list">
+            <li class="panel__item"><button class="tool tool--move panel__tool">Move</button></li>
+
+            <li class="panel__item">
+              <button class="tool tool--transform panel__tool">Transform</button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="panel app__panel">
+        <li class="panel__group">
+          <ul class="panel__list">
+            <li class="panel__item">
+              <button class="color color--current panel__color">Current color</button>
+            </li>
+
+            <li class="panel__item">
+              <button class="color color--prev panel__color">Prev color</button>
+            </li>
+          </ul>
+        </li>
+
+        <li class="panel__group">
+          <ul class="panel__list">
+            <li class="panel__item"><button class="color color--red panel__color">red</button></li>
+
+            <li class="panel__item">
+              <button class="color color--blue panel__color">blue</button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <canvas class="canvas app__canvas">
+        Your browser doesn't support canvas
+      </canvas>
+    </main>
+  </body>
 </html>

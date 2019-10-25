@@ -1,0 +1,29 @@
+.panel {
+    margin: 0;
+    padding: 0;
+    width: 228px;
+  
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+    list-style: none;
+  }
+  
+  .panel__group {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  .panel__list {
+    margin: 0;
+    padding: 0 16px;
+  
+    list-style: none;
+  }
+  
+  .panel__tool,
+  .panel__color {
+    width: 100%;
+  }
