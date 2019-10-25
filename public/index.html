@@ -23,49 +23,76 @@
     </header>
 
     <main class="app">
-      <ul class="panel app__panel">
+      <ul class="panel app__tools">
         <li class="panel__group">
           <ul class="panel__list">
             <li class="panel__item">
-              <button class="tool tool--paint-bucket panel__tool">Paint bucket</button>
+              <button class="tool tool--paint-bucket panel__btn">Paint bucket</button>
             </li>
 
             <li class="panel__item">
-              <button class="tool tool--choose-color panel__tool">Choose color</button>
+              <button class="tool tool--choose-color panel__btn">Choose color</button>
             </li>
           </ul>
         </li>
 
         <li class="panel__group">
           <ul class="panel__list">
-            <li class="panel__item"><button class="tool tool--move panel__tool">Move</button></li>
+            <li class="panel__item"><button class="tool tool--move panel__btn">Move</button></li>
 
             <li class="panel__item">
-              <button class="tool tool--transform panel__tool">Transform</button>
+              <button class="tool tool--transform panel__btn">Transform</button>
             </li>
           </ul>
         </li>
       </ul>
 
-      <ul class="panel app__panel">
+      <ul class="panel app__colors">
         <li class="panel__group">
           <ul class="panel__list">
             <li class="panel__item">
-              <button class="color color--current panel__color">Current color</button>
+              <button class="color color--current panel__btn">Current color</button>
             </li>
 
             <li class="panel__item">
-              <button class="color color--prev panel__color">Prev color</button>
+              <button class="color color--prev panel__btn">Prev color</button>
             </li>
           </ul>
         </li>
 
         <li class="panel__group">
           <ul class="panel__list">
-            <li class="panel__item"><button class="color color--red panel__color">red</button></li>
+            <li class="panel__item"><button class="color color--red panel__btn">red</button></li>
 
             <li class="panel__item">
-              <button class="color color--blue panel__color">blue</button>
+              <button class="color color--blue panel__btn">blue</button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="panel app__sizes">
+        <li class="panel__group">
+          <ul class="panel__list">
+            <li class="panel__item">
+              <div class="size size--4">
+                <input class="visually-hidden" type="radio" name="size" id="4x4" checked />
+                <label class="size__toggle" for="4x4">4x4</label>
+              </div>
+            </li>
+
+            <li class="panel__item">
+              <div class="size size--32">
+                <input class="visually-hidden" type="radio" name="size" id="32x32" />
+                <label class="size__toggle" for="32x32">32x32</label>
+              </div>
+            </li>
+
+            <li class="panel__item">
+              <div class="size size--256">
+                <input class="visually-hidden" type="radio" name="size" id="256x256" />
+                <label class="size__toggle" for="256x256">256x256</label>
+              </div>
             </li>
           </ul>
         </li>

@@ -2,13 +2,25 @@
     display: grid;
   
     grid-template-columns: 228px 512px;
+    justify-content: space-between;
     grid-template-areas:
-      ". canvas"
-      ". canvas";
-    column-gap: 516px;
+      "tools canvas sizes"
+      "colors canvas .";
     row-gap: 92px;
   
     padding: 79px 29px 0;
+  }
+  
+  .app__tools {
+    grid-area: tools;
+  }
+  
+  .app__colors {
+    grid-area: colors;
+  }
+  
+  .app__sizes {
+    grid-area: sizes;
   }
   
   .app__canvas {
