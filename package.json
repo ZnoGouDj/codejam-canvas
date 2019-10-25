@@ -1,0 +1,19 @@
+{
+  "name": "codejam-canvas",
+  "version": "1.0.0",
+  "description": "codejam-canvas",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZnoGouDj/codejam-canvas.git"
+  },
+  "author": "ZnoGouDj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZnoGouDj/codejam-canvas/issues"
+  },
+  "homepage": "https://github.com/ZnoGouDj/codejam-canvas#readme"
+}
