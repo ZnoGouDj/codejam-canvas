@@ -27,16 +27,9 @@ export default class Canvas extends Block {
     this.init();
   }
 
-  async init() {
+  init() {
     this.pixelSize = this.block.width / this.gridSize;
-
-    this.renderEmpty();
     this.scale();
-  }
-
-  renderEmpty() {
-    for (let i = 0; i < this.gridSize; i++)
-      for (let j = 0; j < this.gridSize; j++) this.renderPixel(i, j, this.emptyColors[(i + j) % 2]);
   }
 
   scale() {
@@ -54,10 +47,6 @@ export default class Canvas extends Block {
     const ctx = this.block.getContext("2d");
     ctx.fillStyle = color;
     ctx.fillRect(x * this.pixelSize, y * this.pixelSize, this.pixelSize, this.pixelSize);
-  }
-
-  renderAbsolutePixel(x, y, color) {
-    this.renderPixel(Math.floor(x / this.pixelSize), Math.floor(y / this.pixelSize), color);
   }
 
   renderImage(x, y, src) {
