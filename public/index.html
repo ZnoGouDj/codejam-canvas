@@ -73,32 +73,39 @@
 
       <ul class="panel app__sizes">
         <li class="panel__group">
-          <ul class="panel__list">
-            <li class="panel__item">
-              <div class="size size--4">
-                <input class="visually-hidden" type="radio" name="size" id="4x4" checked />
-                <label class="size__toggle" for="4x4">4x4</label>
-              </div>
+          <ul class="sizes">
+            <li class="sizes__item">
+              <input
+                class="visually-hidden"
+                type="radio"
+                name="sizes"
+                id="4x4"
+                data-size="4"
+                checked
+              />
+              <label class="sizes__toggle" for="4x4">4x4</label>
             </li>
 
-            <li class="panel__item">
-              <div class="size size--32">
-                <input class="visually-hidden" type="radio" name="size" id="32x32" />
-                <label class="size__toggle" for="32x32">32x32</label>
-              </div>
+            <li class="sizes__item">
+              <input class="visually-hidden" type="radio" name="sizes" id="32x32" data-size="32" />
+              <label class="sizes__toggle" for="32x32">32x32</label>
             </li>
 
-            <li class="panel__item">
-              <div class="size size--256">
-                <input class="visually-hidden" type="radio" name="size" id="256x256" />
-                <label class="size__toggle" for="256x256">256x256</label>
-              </div>
+            <li class="sizes__item">
+              <input
+                class="visually-hidden"
+                type="radio"
+                name="sizes"
+                id="256x256"
+                data-size="256"
+              />
+              <label class="sizes__toggle" for="256x256">256x256</label>
             </li>
           </ul>
         </li>
       </ul>
 
-      <canvas class="canvas app__canvas">
+      <canvas class="canvas app__canvas" width="512" height="512">
         Your browser doesn't support canvas
       </canvas>
     </main>
