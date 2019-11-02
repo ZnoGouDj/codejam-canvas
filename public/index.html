@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+
+    <title>Codejam-canvas</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__heading">CodeJam - Pallete</h1>
+
+      <button class="header__menu-toggle">
+        <span class="visually-hidden">Toggle menu</span>
+      </button>
+
+      <button class="header__options-toggle">
+        <span class="visually-hidden">Toggle options</span>
+      </button>
+    </header>
+
+    <main class="app">
+      <ul class="panel app__tools">
+        <li class="panel__group">
+          <ul class="panel__list">
+            <li class="panel__item">
+              <button class="tool tool--paint-bucket panel__btn">Paint bucket</button>
+            </li>
+
+            <li class="panel__item">
+              <button class="tool tool--choose-color panel__btn">Choose color</button>
+            </li>
+          </ul>
+        </li>
+
+        <li class="panel__group">
+          <ul class="panel__list">
+            <li class="panel__item"><button class="tool tool--move panel__btn">Move</button></li>
+
+            <li class="panel__item">
+              <button class="tool tool--transform panel__btn">Transform</button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="panel app__colors">
+        <li class="panel__group">
+          <ul class="panel__list">
+            <li class="panel__item">
+              <button class="color color--current panel__btn">Current color</button>
+            </li>
+
+            <li class="panel__item">
+              <button class="color color--prev panel__btn">Prev color</button>
+            </li>
+          </ul>
+        </li>
+
+        <li class="panel__group">
+          <ul class="panel__list">
+            <li class="panel__item"><button class="color color--red panel__btn">red</button></li>
+
+            <li class="panel__item">
+              <button class="color color--blue panel__btn">blue</button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="panel app__sizes">
+        <li class="panel__group">
+          <ul class="sizes">
+            <li class="sizes__item">
+              <input
+                class="visually-hidden"
+                type="radio"
+                name="sizes"
+                id="4x4"
+                data-size="4"
+                checked
+              />
+              <label class="sizes__toggle" for="4x4">4x4</label>
+            </li>
+
+            <li class="sizes__item">
+              <input class="visually-hidden" type="radio" name="sizes" id="32x32" data-size="32" />
+              <label class="sizes__toggle" for="32x32">32x32</label>
+            </li>
+
+            <li class="sizes__item">
+              <input
+                class="visually-hidden"
+                type="radio"
+                name="sizes"
+                id="256x256"
+                data-size="256"
+              />
+              <label class="sizes__toggle" for="256x256">256x256</label>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <canvas class="canvas app__canvas" width="512" height="512">
+        Your browser doesn't support canvas
+      </canvas>
+    </main>
+  </body>
+</html>

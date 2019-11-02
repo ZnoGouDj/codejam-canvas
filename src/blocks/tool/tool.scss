@@ -1,0 +1,29 @@
+.tool {
+    padding: 12px 0;
+    padding-left: 57px;
+  
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  
+    background: no-repeat 0 center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  
+    &--paint-bucket {
+      background-image: url("blocks/tool/img/paint-bucket.svg");
+    }
+  
+    &--choose-color {
+      background-image: url("blocks/tool/img/choose-color.svg");
+    }
+  
+    &--move {
+      background-image: url("blocks/tool/img/move.svg");
+    }
+  
+    &--transform {
+      background-image: url("blocks/tool/img/transform.svg");
+    }
+  }
