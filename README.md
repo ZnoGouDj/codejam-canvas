@@ -1,3 +1,3 @@
 # codejam-canvas
 
-https://github.com/ZnoGouDj/codejam-canvas
+https://znogoudj.github.io/codejam-canvas/
